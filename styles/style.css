@@ -1,0 +1,614 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Post No Bills Jaffna;
+  src: url("../fonts/PostNoBillsJaffna-Regular.ttf");
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.sign-in,
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 44px;
+  background: #000000;
+}
+.contact {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.register {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sign-in a {
+  text-decoration: none;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 12px;
+  color: #969696;
+  padding: 0 10px;
+}
+.contact a:nth-child(2) {
+  border-right: 1px solid #969696;
+}
+.contact a:nth-child(3) {
+  border-right: 1px solid #969696;
+}
+.sign-in img {
+  margin-right: 14px;
+}
+nav {
+  background: #0f0f0f;
+  height: 64px;
+}
+.logo-box {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  height: 100%;
+}
+.menu ul li {
+  padding: 23px 15px;
+}
+.menu button {
+  display: none;
+}
+.logo-box h3 {
+  text-align: center;
+  font-family: Post No Bills Jaffna;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.menu a {
+  text-decoration: none;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.menu ul li:hover {
+  background: #1f1f1f;
+}
+.menu img {
+  width: 80%;
+}
+.home-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/home-section.svg");
+  padding: 100px 150px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.logo {
+  text-align: center;
+  border: 4px solid #ffffff;
+  padding: 93px 67px;
+  margin-bottom: 80px;
+}
+.logo h1 {
+  font-family: Post No Bills Jaffna;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 2px solid #fff;
+  text-transform: uppercase;
+  height: 80px;
+}
+.logo h4 {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.text-box {
+  width: 730px;
+  height: 96px;
+}
+.text-box p {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.new-season {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 43px;
+  background: #000;
+  width: 50%;
+}
+.season-name {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.season-name h3 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+.line {
+  border: 1px solid #fff;
+  width: 80px;
+  height: 0;
+  margin-bottom: 20px;
+}
+.products {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.product-card {
+  width: 25%;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: 20px 10px;
+}
+.product-card .img-box {
+  width: 100%;
+  height: 185px;
+  background: #191b1c;
+  background-image: url("../images/watch-photo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.name-price p {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 13px;
+  color: #ffffff;
+  margin: 18px 0;
+}
+.new-season .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background-image: url("../images/new-coll-bg.svg");
+  background-size: cover;
+}
+.right h1 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 33px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.line:nth-child(2) {
+  width: 135px;
+}
+.new-season .right button {
+  width: 138px;
+  height: 47px;
+  border: 1px solid #ffffff;
+  background: transparent;
+  padding: 9px 20px;
+  color: #fff;
+  margin: 40px 0 60px;
+}
+.old-collection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.old-collection .left {
+  width: 50%;
+  background-image: url("../images/old-coll-bg.svg");
+  background-size: cover;
+  background-position: center;
+}
+.old-collection .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  padding-top: 40px;
+}
+.old-collection p {
+  margin-top: 20px;
+  font-family: "PT Sans";
+  width: 69%;
+  height: 173px;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+}
+.old-collection button {
+  height: 47px;
+  border: 1px solid #ffffff;
+  background: transparent;
+  padding: 9px 30px;
+  color: #fff;
+  margin: 20px 0 40px;
+}
+.new-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  background: #000000;
+  width: 100%;
+}
+.new-products h1,
+footer h1 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.new-products .products-card {
+  padding: 60px 0;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.new-products .products-card .card {
+  width: 19%;
+  margin: 15px 15px;
+}
+.new-products .img-box {
+  width: 100%;
+  height: 230px;
+  background: #191b1c;
+  background-image: url("../images/watch-photo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.new-products .name-price p {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+}
+footer {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #0f0f0f;
+}
+.brand-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+footer .brand-icons img {
+  width: 15%;
+  margin: 20px 5px 15px 5px;
+}
+@media (max-width: 1025px) {
+  .sign-in {
+    height: 25px;
+  }
+  nav {
+    height: 50px;
+  }
+  .menu a {
+    font-size: 10px;
+  }
+  .menu ul li {
+    padding: 16px 15px;
+  }
+  .home-section {
+    padding: 80px 0 100px;
+  }
+  .sign-in a {
+    font-size: 9px;
+  }
+  .product-card {
+    height: 240px;
+  }
+}
+@media (max-width: 830px) {
+  .home-section .text-box {
+    width: 60%;
+  }
+  .home-section .text-box p {
+    font-size: 14px;
+  }
+  .menu a {
+    font-size: 8px;
+  }
+  .old-collection .right p{
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .home-section .text-box {
+    width: 60%;
+  }
+  .home-section .text-box p {
+    font-size: 13px;
+  }
+  .old-collection .right p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 540px) {
+  .sign-in {
+    display: none;
+  }
+  .logo-box {
+    width: 85%;
+    padding-left: 30px;
+    justify-content: start;
+  }
+  .menu {
+    width: 15%;
+  }
+  .menu ul {
+    display: none;
+  }
+  .menu button {
+    display: flex;
+    justify-content: end;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    background-image: url("../images/hamburger-icon.png");
+    background-position: center;
+    background-size: contain;
+  }
+  .home-section {
+    padding: 50px 60px;
+  }
+  .logo {
+    text-align: center;
+    border: 4px solid #ffffff;
+    padding: 53px 37px;
+    margin-bottom: 30px;
+  }
+  .logo h1 {
+    font-family: Post No Bills Jaffna;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 2px solid #fff;
+    text-transform: uppercase;
+    height: 60px;
+  }
+  .logo h4 {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .home-section .text-box {
+    width: 450px;
+    height: 76px;
+    margin-bottom: 20px;
+  }
+  .text-box p {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .new-season .left {
+    width: 100%;
+  }
+  .new-season .left .product-card {
+    width: 60%;
+  }
+  .new-season .right {
+    padding-top: 100px;
+    padding-bottom: 0;
+    width: 100%;
+  }
+  .new-season h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .new-season .line {
+    width: 108px;
+    margin-bottom: 0;
+  }
+  .new-season .right button {
+    width: 108px;
+    height: 37px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    color: #fff;
+    margin: 20px 0 30px;
+  }
+  .old-collection .left {
+    width: 100%;
+    height: 220px;
+  }
+  .old-collection .right {
+    width: 100%;
+  }
+  .old-collection button {
+    height: 37px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    padding: 9px 15px;
+    color: #fff;
+    margin: 30px 0 40px;
+  }
+  .new-products h1,
+  footer h1 {
+    font-size: 20px;
+  }
+  .new-products .products-card .card {
+    width: 80%;
+  }
+  footer .brand-icons img {
+    width: 35%;
+    margin: 20px 5px 15px 5px;
+  }
+}
+@media (max-width: 414px) {
+  #navbar-responsive {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    bottom: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    transition: 0.5s;
+  }
+  .home-section {
+    padding-bottom: 100px;
+  }
+  .home-section .text-box {
+    width: 100%;
+  }
+  .home-section .text-box p {
+    font-size: 12px;
+  }
+  .old-collection .right button {
+    height: 37px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    padding: 9px 15px;
+    color: #fff;
+    margin: 30px 0 40px;
+  }
+}
+@media (max-width: 280px) {
+  .home-section .logo {
+    text-align: center;
+    border: 4px solid #ffffff;
+    padding: 23px 37px;
+  }
+  .logo h1 {
+    font-family: Post No Bills Jaffna;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 2px solid #fff;
+    text-transform: uppercase;
+    height: 60px;
+  }
+  .logo h4 {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .home-section .text-box {
+    width: 250px;
+  }
+  .home-section .text-box p {
+    font-size: 10px;
+  }
+  .new-season .left .season-name h3{
+    font-size: 22px;
+  }
+  .old-collection .right h1{
+    font-size: 18px;
+  }
+}
